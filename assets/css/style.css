@@ -1,0 +1,90 @@
+.nav{
+    background-color:lightblue;
+    
+    
+}
+
+.list{
+    color: darkblue;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    margin-left: 10px;
+    list-style: none;
+
+}
+.generalContainer{
+   
+    margin: 20px;
+}
+.container{
+    display:flex;
+    flex-direction: row;
+    background-color: aqua;
+    border: 1px darkblue solid;
+}
+.singleChat{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border: 1px darkblue solid;
+    
+}
+.imgContact{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+input{
+    margin: 10px 5px 10px 5px;
+}
+.titleChat{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border: 0.5px darkblue solid;
+    width: 1011px;
+    
+
+}
+.activeChat{
+    background-color: rgba(229, 255, 0, 0.524);
+}
+.imgChat{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+
+}
+.contact1{
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact2{
+    margin: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.text1{
+    background-color: rgba(229, 255, 0, 0.524);
+    margin: 5px;
+    padding: 10px;
+  
+
+}
+.text2{
+    background-color: rgb(67, 82, 244);
+    margin: 5px;
+    padding: 10px;
+    color: bisque;
+
+}
+.time{
+    font-size: x-small;
+    padding-top: 10px;
+}
