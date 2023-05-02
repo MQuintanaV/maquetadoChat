@@ -1,0 +1,13 @@
+.nav{
+    background-color: $colorNav;
+}
+
+.nav__list{
+    color: $letterOscuro;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    margin-left: 10px;
+    list-style: none;
+}
