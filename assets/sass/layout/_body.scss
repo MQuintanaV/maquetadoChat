@@ -1,12 +1,14 @@
 .generalContainer {
     margin: 20px;
+    width: 100%;
 }
 
 .container {
     display: flex;
     flex-direction: row;
-    background-color: rgb(130, 201, 255);
+    background-color: $colorNav;
     border: $border;
+    width: 98%;
 }
 
 .banner {
@@ -49,7 +51,7 @@ input {
     padding: 10px;
     border-bottom: $border;
     border-left: $border;
-    width: 1450px;
+    width: 1580px;
     border-right: $border;
 }
 
@@ -58,26 +60,27 @@ input {
 }
 
 .imgChat {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     margin-right: 10px;
     border-radius: 50%;
 }
 
 .contact1 {
-    margin: 5px;
+    margin: 15px;
     display: flex;
     flex-direction: row;
 }
 
 .contact2 {
-    margin: 5px;
+    margin: 15px;
     display: flex;
     flex-direction: row-reverse;
 }
 
 .text1 {
     background-color: $activeChat;
+    color: rgb(215, 204, 204);
     margin: 5px;
     padding: 10px;
 }
@@ -100,4 +103,50 @@ input {
 
 .date {
     font-size: small;
+    margin-right:10px ;
 }
+
+
+
+    @media only screen and (max-width: 576px){
+    .contacts{
+        width:80px;     
+    }
+
+    .banner__img {
+        height: 100px;
+        width: 300px;
+        margin-right: 30px;
+    }
+
+    .singleChat {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 10px;       
+    }
+
+    .date {    
+        padding-left: 5px;
+        margin: 3px;
+    }
+
+    .name {
+        margin: 3px;
+    }
+
+    .chat{
+        width: 75%;
+        font-size: 15px;
+    }
+
+    .container{
+        width: 90%;
+    }
+
+    .titleChat{
+        width: 93%;
+    }
+
+}
+

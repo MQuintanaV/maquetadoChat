@@ -1,9 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Orbitron:wght@600&display=swap");
 .nav {
-  background-color: lightblue;
+  background-color: rgba(156, 129, 129, 0.645);
 }
 
 .nav__list {
-  color: darkblue;
+  color: rgb(31, 18, 18);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -12,15 +13,40 @@
   list-style: none;
 }
 
+.nav__boton {
+  display: none;
+}
+
+@media only screen and (max-width: 576px) {
+  .nav {
+    width: 100%;
+  }
+  .nav__boton {
+    display: block;
+    position: relative;
+    left: 75%;
+  }
+  .nav__listContainer {
+    display: none;
+  }
+  .nav__list {
+    display: block;
+  }
+  .nav__list__element {
+    display: inherit;
+  }
+}
 .generalContainer {
   margin: 20px;
+  width: 100%;
 }
 
 .container {
   display: flex;
   flex-direction: row;
-  background-color: rgb(130, 201, 255);
+  background-color: rgba(156, 129, 129, 0.645);
   border: 1px darkblue solid;
+  width: 98%;
 }
 
 .banner {
@@ -64,41 +90,42 @@ input {
   padding: 10px;
   border-bottom: 1px darkblue solid;
   border-left: 1px darkblue solid;
-  width: 1450px;
+  width: 1580px;
   border-right: 1px darkblue solid;
 }
 
 .activeChat {
-  background-color: rgba(229, 255, 0, 0.524);
+  background-color: rgba(31, 18, 18, 0.447);
 }
 
 .imgChat {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   margin-right: 10px;
   border-radius: 50%;
 }
 
 .contact1 {
-  margin: 5px;
+  margin: 15px;
   display: flex;
   flex-direction: row;
 }
 
 .contact2 {
-  margin: 5px;
+  margin: 15px;
   display: flex;
   flex-direction: row-reverse;
 }
 
 .text1 {
-  background-color: rgba(229, 255, 0, 0.524);
+  background-color: rgba(31, 18, 18, 0.447);
+  color: rgb(215, 204, 204);
   margin: 5px;
   padding: 10px;
 }
 
 .text2 {
-  background-color: rgb(67, 82, 244);
+  background-color: rgb(55, 28, 28);
   margin: 5px;
   padding: 10px;
   color: bisque;
@@ -115,6 +142,75 @@ input {
 
 .date {
   font-size: small;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 576px) {
+  .contacts {
+    width: 80px;
+  }
+  .banner__img {
+    height: 100px;
+    width: 300px;
+    margin-right: 30px;
+  }
+  .singleChat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 10px;
+  }
+  .date {
+    padding-left: 5px;
+    margin: 3px;
+  }
+  .name {
+    margin: 3px;
+  }
+  .chat {
+    width: 75%;
+    font-size: 15px;
+  }
+  .container {
+    width: 90%;
+  }
+  .titleChat {
+    width: 93%;
+  }
+}
+.pie__parrafo {
+  font-family: "Dancing Script", cursive;
+}
+
+.pie {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 100px;
+  background-color: rgba(156, 129, 129, 0.645);
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.legionImg {
+  height: 80px;
+  padding: 15px;
+}
+
+@media only screen and (max-width: 576px) {
+  .pie {
+    background-color: rgba(156, 129, 129, 0.645);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .pie__parrafo {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

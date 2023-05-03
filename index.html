@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,94 +8,109 @@
     <title>practica consolidacion flex</title>
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
+
 <body>
-<nav class="nav">
-    <ul class="nav__list">
-        <li>Home</li>
-        <li>Preguntas Frecuentes</li>
-        <li>Manuales</li>
-        <li>Noticias</li>
-        <li>Calendario</li>
-        <li>Administración perfil</li>
-        <li>Organigrama empresa</li>
-        <li>Chat </li>
-    </ul>
-</nav>
-<section class="generalContainer">
-    <div class="banner">
-        <img class="banner__img" src="assets/img/fondoChat.jpg">
-    </div>
-    <div class="container">
-        <div class="contacts">
-            <input type="text" placeholder="search 🔎" >
-            <div class="singleChat">
-                <img src="/assets/img/eren.jpg" alt="Eren" class="imgContact">
-                <p class="name">Eren</p>
-                <p class="date">27-4-23</p>
+    <nav class="nav">
+        <button class="nav__boton" onclick="mostrarMenuPagina()">Mostrar Menu</button>
+        <div class="nav__listContainer">
+            <ul class="nav__list">
+                <li class="nav__list__element">Home</li>
+                <li class="nav__list__element">Preguntas Frecuentes</li>
+                <li class="nav__list__element">Manuales</li>
+                <li class="nav__list__element">Noticias</li>
+                <li class="nav__list__element">Calendario</li>
+                <li class="nav__list__element">Administración perfil</li>
+                <li class="nav__list__element">Organigrama empresa</li>
+                <li class="nav__list__element">Chat vendedores y soporte </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="generalContainer">
+        <div class="banner">
+            <img class="banner__img" src="assets/img/fondoChat.jpg">
+        </div>
+        <div class="container">
+            <div class="contacts">
+                <input type="text" placeholder="search 🔎">
+                <div class="singleChat">
+                    <img src="/assets/img/eren.jpg" alt="Eren" class="imgContact">
+                    <p class="name">Eren</p>
+                    <p class="date">27-4-23</p>
+                </div>
+                <div class="singleChat">
+                    <img src="/assets/img/armin.jpg" alt="Armin" class="imgContact">
+                    <p class="name">Armin</p>
+                    <p class="date">27-4-23</p>
+                </div>
+                <div class="singleChat activeChat">
+                    <img src="/assets/img/mikasa.jpg" alt="Mikasa" class="imgContact">
+                    <p class="name">Mikasa</p>
+                    <p class="date">27-4-23</p>
+                </div>
+                <div class="singleChat">
+                    <img src="/assets/img/levi.jpg" alt="Levi" class="imgContact">
+                    <p class="name">Levi</p>
+                    <p class="date">27-4-23</p>
+                </div>
+                <div class="singleChat">
+                    <img src="/assets/img/hanji.jpg" alt="Hanji" class="imgContact">
+                    <p class="name">Hanji</p>
+                    <p class="date">27-4-23</p>
+                </div>
+                <div class="singleChat">
+                    <img src="/assets/img/erwin.jpg" alt="Erwin" class="imgContact">
+                    <p class="name">Erwin</p>
+                    <p class="date">27-4-23</p>
+                </div>
+
             </div>
-            <div class="singleChat">
-                <img src="/assets/img/armin.jpg" alt="Armin" class="imgContact">
-                <p class="name">Armin</p>
-                <p class="date">27-4-23</p>
-            </div>
-            <div class="singleChat activeChat" >
-                <img src="/assets/img/mikasa.jpg" alt="Mikasa" class="imgContact">
-                <p class="name">Mikasa</p>
-                <p class="date">27-4-23</p>
-            </div>
-            <div class="singleChat">
-                <img src="/assets/img/levi.jpg" alt="Levi" class="imgContact">
-                <p class="name">Levi</p>
-                <p class="date">27-4-23</p>
-            </div>
-            <div class="singleChat">
-                <img src="/assets/img/hanji.jpg" alt="Hanji" class="imgContact">
-                <p class="name">Hanji</p>
-                <p class="date">27-4-23</p>
-            </div>
-            <div class="singleChat">
-                <img src="/assets/img/erwin.jpg" alt="Erwin" class="imgContact">
-                <p class="name">Erwin</p>
-                <p class="date">27-4-23</p>
+            <div class="chat">
+                <div class="titleChat">
+                    <img src="/assets/img/mikasa.jpg" alt="Mikasa" class="imgContact">
+                    <p>Mikasa</p>
+
+                </div>
+                <div class="contact1">
+                    <img src="/assets/img/mikasa.jpg" alt="Mikasa" class="imgChat">
+                    <p class="text1">Lorem ipsum dolor sit amet consectci delectus itaque m alias! Dolor, voluptatibus?
+                    </p>
+                    <p class="time">20:22 ✔️✔️</p>
+                </div>
+                <div class="contact2">
+                    <img src="/assets/img/tanjiro.jpg" alt="Tanjiro" class="imgChat">
+                    <p class="text2">Lorem ipsum dolor sit amet consectci delectus itaque m alias! Dolor, voluptatibus?
+                    </p>
+                    <p class="time">20:24 ✔️✔️</p>
+                </div>
+                <div class="contact1">
+                    <img src="/assets/img/mikasa.jpg" alt="Mikasa" class="imgChat">
+                    <p class="text1">Lorem ipsum dolor sit amet consectci delectus itaque m alias! Dolor, voluptatibus?
+                    </p>
+                    <p class="time">20:32 ✔️✔️</p>
+                </div>
+                <div class="contact2">
+                    <img src="/assets/img/tanjiro.jpg" alt="Tanjiro" class="imgChat">
+                    <p class="text2">Lorem ipsum dolor sit amet consectci delectus itaque m alias! Dolor, voluptatibus?
+                    </p>
+                    <p class="time">20:32 ✔️</p>
+                </div>
+
+
             </div>
 
         </div>
-        <div class="chat">
-            <div class="titleChat">
-                <img src="/assets/img/mikasa.jpg" alt="Mikasa" class="imgContact">
-                <p>Mikasa</p> 
 
-            </div>
-            <div class="contact1">
-                <img src="/assets/img/mikasa.jpg" alt="Mikasa" class="imgChat">
-                <p class="text1">Lorem ipsum dolor sit amet consectci delectus itaque m alias! Dolor, voluptatibus?</p>
-                <p class="time">20:22 ✔️✔️</p>
-            </div>
-            <div class="contact2">
-                <img src="/assets/img/tanjiro.jpg" alt="Tanjiro" class="imgChat">
-                <p class="text2">Lorem ipsum dolor sit amet consectci delectus itaque m alias! Dolor, voluptatibus?</p>
-                <p class="time">20:24 ✔️✔️</p>
-            </div>
-            <div class="contact1">
-                <img src="/assets/img/mikasa.jpg" alt="Mikasa" class="imgChat">
-                <p class="text1">Lorem ipsum dolor sit amet consectci delectus itaque m alias! Dolor, voluptatibus?</p>
-                <p class="time">20:32 ✔️✔️</p>
-            </div>
-            <div class="contact2">
-                <img src="/assets/img/tanjiro.jpg" alt="Tanjiro" class="imgChat">
-                <p class="text2" >Lorem ipsum dolor sit amet consectci delectus itaque m alias! Dolor, voluptatibus?</p>
-                <p class="time">20:32 ✔️</p>
-            </div>
-                       
-
+    </section>
+    <footer class="pie">
+        <div class="footerContainer">
+            <img class="legionImg" src="assets/img/legion.png">
+            <img class="legionImg" src="assets/img/legion1.png">
+            <img class="legionImg" src="assets/img/legion2.png">
+            <img class="legionImg" src="assets/img/legion3.png">
         </div>
-
-    </div>
-    
-</section>
-<footer class="pie">
-    <p class="pie__parrafo">Este es el pie</p>
-</footer>
-    
+        <p class="pie__parrafo">Todos los derechos reservados ©</p>
+    </footer>
+<script src="assets/js/scripts.js"></script>
 </body>
+
 </html>

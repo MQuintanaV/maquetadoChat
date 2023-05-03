@@ -1,5 +1,5 @@
 .nav{
-    background-color: $colorNav;
+    background-color: $colorNav;    
 }
 
 .nav__list{
@@ -10,4 +10,27 @@
     padding: 20px;
     margin-left: 10px;
     list-style: none;
+}
+.nav__boton{
+    display: none;
+}
+
+@media only screen and (max-width: 576px) {
+    .nav{
+        width: 100%;
+    }
+    .nav__boton {
+      display: block;
+      position: relative;
+      left: 75%;
+    }
+    .nav__listContainer {
+      display: none;
+    }
+    .nav__list {
+      display: block;
+    }
+    .nav__list__element {
+      display: inherit;
+    }
 }
