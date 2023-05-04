@@ -90,8 +90,8 @@ input {
   padding: 10px;
   border-bottom: 1px darkblue solid;
   border-left: 1px darkblue solid;
-  width: 1580px;
-  border-right: 1px darkblue solid;
+  width: 1500px;
+  /* border-right: $border; */
 }
 
 .activeChat {
@@ -115,6 +115,7 @@ input {
   margin: 15px;
   display: flex;
   flex-direction: row-reverse;
+  margin-right: 10%;
 }
 
 .text1 {
@@ -143,6 +144,22 @@ input {
 .date {
   font-size: small;
   margin-right: 10px;
+}
+
+.newText {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.getInto {
+  width: 800px;
+  padding: 10px;
+}
+
+.imgSend {
+  width: 4%;
+  height: 4%;
 }
 
 @media only screen and (max-width: 576px) {
@@ -176,6 +193,9 @@ input {
   }
   .titleChat {
     width: 93%;
+  }
+  .imgSend {
+    display: none;
   }
 }
 .pie__parrafo {

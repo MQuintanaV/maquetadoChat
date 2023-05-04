@@ -51,8 +51,8 @@ input {
     padding: 10px;
     border-bottom: $border;
     border-left: $border;
-    width: 1580px;
-    border-right: $border;
+    width: 1500px;
+    /* border-right: $border; */
 }
 
 .activeChat {
@@ -76,6 +76,7 @@ input {
     margin: 15px;
     display: flex;
     flex-direction: row-reverse;
+    margin-right: 10%;
 }
 
 .text1 {
@@ -106,6 +107,21 @@ input {
     margin-right:10px ;
 }
 
+.newText{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.getInto{
+    width: 800px;
+    padding: 10px;
+}
+
+.imgSend{
+    width: 4%;
+    height: 4%;
+}
 
 
     @media only screen and (max-width: 576px){
@@ -146,6 +162,10 @@ input {
 
     .titleChat{
         width: 93%;
+    }
+
+    .imgSend{
+        display: none;
     }
 
 }
